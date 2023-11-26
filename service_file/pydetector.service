@@ -1,0 +1,11 @@
+[Unit]
+Description=Pydetector
+After=network.target
+
+[Service]
+User=nikolay
+Type=simple
+ExecStart=/usr/bin/python3 /home/nikolay/Practise/main.py
+
+[Install]
+WantedBy=multi-user.target
